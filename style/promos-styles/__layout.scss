@@ -1,0 +1,134 @@
+body {
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+
+    header {
+        .navbar {
+            @include navbar;
+
+            .navbar-collapse {
+                justify-content: space-around;
+            }
+        }
+
+        .navbar-nav {
+            .login {
+                @include flex-align-items(center);
+
+                img {
+                    @include width-height (1.75rem, 1.75rem);
+                }
+            }
+
+            .cart {
+                @include flex-align-items(center);
+
+                img {
+                    @include width-height (1.75rem, 1.75rem);
+                }
+            }
+
+        }
+
+    }
+
+    main {
+        .main-promos {
+            &__container {
+                &--title {
+                    @include container-title;
+
+                    h3 {
+                       @include main-title;
+                    }
+
+                    small {
+                        font-size: clamp(0.875rem, 1rem, 2rem);
+                    }
+                }
+
+                &--grid {
+                    .grid-title {
+                        @include grid-title;
+
+
+                        &__promos {
+                            @include grid-title__promos;
+                        }
+                    }
+
+                    .grid-products {
+                        @include grid-products;
+
+                        &__card {
+                            @include grid-products__card;
+
+                            .context {
+                                @include card-context;
+
+                                .info {
+                                    &__name {
+                                        @include card-info;
+                                    }
+                                }
+
+                                .price {
+                                    @include card-price;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: #7DDEF8;
+
+        article {
+            @include flex-flex-direction (column);
+
+            .info {
+                margin-bottom: 37px;
+
+                &__links {
+
+                    ul {
+                        @include links-ul;
+
+                        li {
+                            border-right: 1px solid #000000;
+
+                            a {
+                                @include links-a;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .social {
+                @include social;
+
+                &__icons {
+                    @include social-apps-container (space-around, center);
+
+                }
+
+                &__apps {
+                    @include social-apps-container (space-evenly, center);
+
+                }
+            }
+
+            .legal {
+                p {
+                    @include legal-p;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,120 @@
+/*--------------------------- Estilos del index ------------------------*/
+
+body {
+    font-family: $fontgeneral;
+
+    header {
+        .navbar {
+            @include navbar;
+
+            .navbar-collapse {
+                justify-content: space-around;
+            }
+        }
+
+        .navbar-nav {
+            .login {
+                @include flex-align-items(center);
+
+                img {
+                    @include width-height (1.75rem, 1.75rem);
+                }
+            }
+
+            .cart {
+                @include flex-align-items(center);
+
+                img {
+                    @include width-height (1.75rem, 1.75rem);
+                }
+            }
+
+        }
+
+
+    }
+
+    main {
+        .banner {
+            @include flex-align-items (center);
+            @include flex-justify-content(space-around);
+        
+            .progress {
+                @include width-height (100%, pxTorem(2, rem));
+            }
+
+            div:nth-child(2) {
+                text-transform: uppercase;
+            }
+        }
+
+        .products {
+
+            .menu-main {
+                align-content: center;
+            }
+
+            .menu-aside {
+                @include flex-justify-content(center);
+                padding: 1rem;
+                
+
+                div {
+                    padding: 1rem;
+                    text-align: center;
+                }
+
+            }
+        }
+    }
+
+    footer {
+        background-color: #7DDEF8;
+
+        article {
+            @include flex-flex-direction (column);
+
+            .info {
+                margin-bottom: 37px;
+
+                &__links {
+
+                    ul {
+                        @include links-ul;
+
+                        li {
+                            border-right: 1px solid #000000;
+
+                            a {
+                                @include links-a;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .social {
+                @include social;
+
+                &__icons {
+                    @include social-apps-container (space-around, center);
+                    
+                }
+
+                &__apps {
+                    @include social-apps-container (space-evenly, center);
+                    
+                }
+            }
+
+            .legal {
+                p {
+                   @include legal-p;
+                }
+            }
+
+        }
+    }
+
+}

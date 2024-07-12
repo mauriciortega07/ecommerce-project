@@ -1,0 +1,159 @@
+body {
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+
+
+    header {
+        .navbar {
+            @include navbar;
+
+            .navbar-collapse {
+                justify-content: space-around;
+            }
+        }
+
+        .navbar-nav {
+            .login {
+                @include flex-align-items(center);
+
+                img {
+                    @include width-height (1.75rem, 1.75rem);
+                }
+            }
+
+            .cart {
+                @include flex-align-items(center);
+
+                img {
+                    @include width-height (1.75rem, 1.75rem);
+                }
+            }
+
+        }
+
+    }
+
+    main {
+        article {
+            section {
+                .login {
+                    margin: 10px 15px;
+                    padding: 10px 0%;
+                    text-align: center;
+
+                    h3 {
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-size: 2rem;
+                    }
+
+                    small {
+                        font-size: clamp(0.875rem, 1rem, 2rem);
+                    }
+                }
+
+                .login-form {
+                    display: flex;
+                    flex-flow: column wrap;
+                    margin: 20px 10px;
+                    gap: 20px;
+
+                    div {
+                        display: flex;
+                        flex-flow: column wrap;
+                        align-content: center;
+                        padding: 10px;
+
+                        h6 {
+                            text-transform: uppercase;
+                            font-size: clamp(.8rem, 1rem, 2rem);
+                        }
+
+                        input {
+                            border-radius: 8px;
+                            border: 2px solid #FA3545;
+                        }
+                    }
+
+                    div:nth-child(3) {
+                        p{
+                            text-align: center;
+                            text-transform: uppercase;
+                            cursor: pointer;
+                            text-decoration: underline;
+                            color: #323B95;
+                            font-size: .8rem;
+
+                            &:hover {
+                                color: #C70000;
+                            }
+
+                        }
+                        input {
+                            width: 215px;
+                            color: #C70000;
+                            text-transform: uppercase;
+                            background-color: #ffc107;
+                            font-weight: 600;
+                            border: 2px solid #ffc107;
+
+                            &:hover {
+                                background-color: #8f6c05;
+                                color: #ffc107;
+                                transition: all .3s ease;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: #7DDEF8;
+
+        article {
+            @include flex-flex-direction (column);
+
+            .info {
+                margin-bottom: 37px;
+
+                &__links {
+
+                    ul {
+                        @include links-ul;
+
+                        li {
+                            border-right: 1px solid #000000;
+
+                            a {
+                                @include links-a;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .social {
+                @include social;
+
+                &__icons {
+                    @include social-apps-container (space-around, center);
+
+                }
+
+                &__apps {
+                    @include social-apps-container (space-evenly, center);
+
+                }
+            }
+
+            .legal {
+                p {
+                    @include legal-p;
+                }
+            }
+
+        }
+    }
+}

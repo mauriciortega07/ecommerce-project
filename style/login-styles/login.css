@@ -1,0 +1,162 @@
+/*-------------------- Variables -----------------*/
+/*---------------------Mixins del Navbar ---------------------- */
+/*---------------------- Mixins del footer -------------------- */
+/*----------------------- Funciones ----------------------- */
+/*------------------------ Convertir Px a Rem --------------*/
+body footer article .social__icons img {
+  max-width: 100%;
+}
+body footer article .social__apps img {
+  width: 150px;
+  height: 40px;
+}
+
+body {
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+}
+body header .navbar {
+  background-color: #dfdfdf;
+  box-shadow: 0 0 0.8125rem 0 rgba(0, 0, 0, 0.75);
+  text-transform: uppercase;
+}
+body header .navbar .navbar-collapse {
+  justify-content: space-around;
+}
+body header .navbar-nav .login {
+  display: flex;
+  align-items: center;
+}
+body header .navbar-nav .login img {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+body header .navbar-nav .cart {
+  display: flex;
+  align-items: center;
+}
+body header .navbar-nav .cart img {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+body main article section .login {
+  margin: 10px 15px;
+  padding: 10px 0%;
+  text-align: center;
+}
+body main article section .login h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+}
+body main article section .login small {
+  font-size: 1rem;
+}
+body main article section .login-form {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 20px 10px;
+  gap: 20px;
+}
+body main article section .login-form div {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  padding: 10px;
+}
+body main article section .login-form div h6 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+body main article section .login-form div input {
+  border-radius: 8px;
+  border: 2px solid #FA3545;
+}
+body main article section .login-form div:nth-child(3) p {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #323B95;
+  font-size: 0.8rem;
+}
+body main article section .login-form div:nth-child(3) p:hover {
+  color: #C70000;
+}
+body main article section .login-form div:nth-child(3) input {
+  width: 215px;
+  color: #C70000;
+  text-transform: uppercase;
+  background-color: #ffc107;
+  font-weight: 600;
+  border: 2px solid #ffc107;
+}
+body main article section .login-form div:nth-child(3) input:hover {
+  background-color: #8f6c05;
+  color: #ffc107;
+  transition: all 0.3s ease;
+}
+body footer {
+  background-color: #7DDEF8;
+}
+body footer article {
+  display: flex;
+  flex-direction: column;
+}
+body footer article .info {
+  margin-bottom: 37px;
+}
+body footer article .info__links ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  font-size: clamp(0.7rem, 1vw, 2rem);
+  margin: 0px;
+  gap: 20px;
+  padding: 20px 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body footer article .info__links ul li {
+  border-right: 1px solid #000000;
+}
+body footer article .info__links ul li a {
+  text-decoration: none;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  text-wrap: nowrap;
+  color: #000000;
+  font-weight: 500;
+}
+body footer article .social {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 36px;
+}
+body footer article .social__icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  margin: 18px;
+  padding: 5px;
+  box-sizing: border-box;
+  gap: 12px;
+}
+body footer article .social__apps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 18px;
+  padding: 5px;
+  box-sizing: border-box;
+  gap: 12px;
+}
+body footer article .legal p {
+  text-wrap: wrap;
+  font-weight: 400;
+  font-size: clamp(0.7rem, 1vw, 2rem);
+  text-align: justify;
+}/*# sourceMappingURL=login.css.map */

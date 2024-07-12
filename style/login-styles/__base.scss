@@ -1,0 +1,90 @@
+/*-------------------- Variables -----------------*/
+
+$fontgeneral: "Roboto Condensed", Arial, Helvetica, sans-serif;
+
+/*---------------------Mixins del Navbar ---------------------- */
+
+@mixin navbar {
+    background-color: #dfdfdf;
+    box-shadow: 0 0 .8125rem 0 rgba(0, 0, 0, .75);
+    text-transform: uppercase;
+}
+
+@mixin flex-align-items ($alignitems) {
+    display: flex;
+    align-items: $alignitems;
+}
+
+@mixin flex-justify-content ($justifycontent) {
+    display: flex;
+    justify-content: $justifycontent;
+}
+
+@mixin width-height ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+/*---------------------- Mixins del footer -------------------- */
+
+@mixin flex-flex-direction ($fdirection) {
+    display: flex;
+    flex-direction: $fdirection;
+}
+
+@mixin links-ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    font-size: clamp(.7rem, 1vw, 2rem);
+    margin: 0px;
+    gap: 20px;
+    padding: 20px 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin links-a {
+    text-decoration: none;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    text-wrap: nowrap;
+    color: #000000;
+    font-weight: 500;
+}
+
+@mixin social {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 36px;
+}
+
+@mixin social-apps-container ($jc, $ac) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $jc;
+    align-content: $ac;
+    margin: 18px;
+    padding: 5px;
+    box-sizing: border-box;
+    gap: 12px;
+}
+
+@mixin legal-p {
+    text-wrap: wrap;
+    font-weight: 400;
+    font-size: clamp(.7rem, 1vw, 2rem);
+    text-align: justify;
+}
+
+/*----------------------- Funciones ----------------------- */
+
+/*------------------------ Convertir Px a Rem --------------*/
+
+
+@function pxTorem ($valuepx, $unit) {
+    $result: calc($valuepx / 16);
+    @return $result +$unit;
+}
