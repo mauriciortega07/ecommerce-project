@@ -1,0 +1,112 @@
+/*-------------------- Variables -----------------*/
+/*---------------------Mixins del Navbar ---------------------- */
+/*----------------------- Funciones ----------------------- */
+/*------------------------ Convertir Px a Rem --------------*/
+body footer article .social__icons img {
+  max-width: 100%;
+}
+body footer article .social__apps img {
+  width: 9.375rem;
+  height: 2.5rem;
+}
+
+body {
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+}
+body header .navbar {
+  background-color: #dfdfdf;
+  box-shadow: 0 0 0.8125rem 0 rgba(0, 0, 0, 0.75);
+  text-transform: uppercase;
+}
+body header .navbar .navbar-collapse {
+  justify-content: space-around;
+}
+body header .navbar-nav .login {
+  display: flex;
+  align-items: center;
+}
+body header .navbar-nav .login img {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+body header .navbar-nav .cart {
+  display: flex;
+  align-items: center;
+}
+body header .navbar-nav .cart img {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+body main .container .container .drinks-title h2 {
+  text-transform: uppercase;
+}
+body main .container .container .drinks-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  margin: 15px 0px;
+}
+body footer {
+  background-color: #7DDEF8;
+}
+body footer article {
+  display: flex;
+  flex-direction: column;
+}
+body footer article .info {
+  margin-bottom: 37px;
+}
+body footer article .info__links ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  font-size: clamp(0.7rem, 1vw, 2rem);
+  margin: 0px;
+  gap: 20px;
+  padding: 20px 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body footer article .info__links ul li {
+  border-right: 1px solid #000000;
+}
+body footer article .info__links ul li a {
+  text-decoration: none;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  text-wrap: nowrap;
+  color: #000000;
+  font-weight: 500;
+}
+body footer article .social {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 36px;
+}
+body footer article .social__icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  margin: 18px;
+  padding: 5px;
+  box-sizing: border-box;
+  gap: 12px;
+}
+body footer article .social__apps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 18px;
+  padding: 5px;
+  box-sizing: border-box;
+  gap: 12px;
+}
+body footer article .legal p {
+  text-wrap: wrap;
+  font-weight: 400;
+  font-size: clamp(0.7rem, 1vw, 2rem);
+  text-align: justify;
+}/*# sourceMappingURL=bebidas.css.map */
