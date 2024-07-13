@@ -54,7 +54,7 @@ body {
         .carousel-container {
             &__promos {
 
-                @include flex-justify-content (flex, center);
+                @include flex-justify-content (center);
 
                 .carousel {
                     width: 800px;
