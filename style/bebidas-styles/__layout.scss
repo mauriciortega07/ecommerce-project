@@ -43,15 +43,38 @@ body {
                         text-transform: uppercase;
                     }
                 }
+
                 .drinks-container {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fill,minmax(25%, 1fr));
-                    margin: 15px 0px;
+                    @include drinks-container;
+
+                    .card {
+                        &:hover {
+                            cursor: pointer;
+                            scale: 102%;
+                            transition: all .2s linear; 
+                        }
+                        .card-body {
+                            @include flex-flex-direction (column);
+                            @include flex-justify-content (space-between);
+                            gap:10px;
+
+                            h5 {
+                                @include card-title;
+                            }
+
+                            div {
+                                margin-top: 10px;
+                                .btn {
+                                    @include btn-style;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
     }
-    
+
 
     footer {
         background-color: #7DDEF8;
@@ -84,18 +107,18 @@ body {
 
                 &__icons {
                     @include social-apps-container (space-around, center);
-                    
+
                 }
 
                 &__apps {
                     @include social-apps-container (space-evenly, center);
-                    
+
                 }
             }
 
             .legal {
                 p {
-                   @include legal-p;
+                    @include legal-p;
                 }
             }
 

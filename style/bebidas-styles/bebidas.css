@@ -1,5 +1,6 @@
 /*-------------------- Variables -----------------*/
 /*---------------------Mixins del Navbar ---------------------- */
+/* ------------------ Mixins del main ------------------------ */
 /*----------------------- Funciones ----------------------- */
 /*------------------------ Convertir Px a Rem --------------*/
 body footer article .social__icons img {
@@ -42,8 +43,35 @@ body main .container .container .drinks-title h2 {
 }
 body main .container .container .drinks-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
   margin: 15px 0px;
+  gap: 18px;
+}
+body main .container .container .drinks-container .card:hover {
+  cursor: pointer;
+  scale: 102%;
+  transition: all 0.2s linear;
+}
+body main .container .container .drinks-container .card .card-body {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+body main .container .container .drinks-container .card .card-body h5 {
+  text-transform: uppercase;
+  color: #323B95;
+  font-weight: 500;
+}
+body main .container .container .drinks-container .card .card-body div {
+  margin-top: 10px;
+}
+body main .container .container .drinks-container .card .card-body div .btn {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #C70000;
 }
 body footer {
   background-color: #7DDEF8;

@@ -81,6 +81,28 @@ $fontgeneral: "Roboto Condensed", Arial, Helvetica, sans-serif;
     font-size: .9rem;
 }
 
+/* ------------------ Mixins del main ------------------------ */
+
+@mixin drinks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    margin: 15px 0px;
+    gap: 18px;
+}
+
+@mixin card-title {
+    text-transform: uppercase;
+    color: #323B95;
+    font-weight: 500;
+}
+
+@mixin btn-style {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #C70000;
+}
+
 /*----------------------- Funciones ----------------------- */
 
 /*------------------------ Convertir Px a Rem --------------*/
